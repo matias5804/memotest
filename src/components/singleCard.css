@@ -1,0 +1,57 @@
+.card {
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.card-grid {
+  display: grid;
+  max-width: 440px;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.front-card {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.back-card {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*frente de la tarjeta*/
+.card .front-card {
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    position: absolute;
+}
+
+.flipped .front-card{
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+/*back ofa card - cover*/
+
+.card .back-card{
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+.flipped .back-card {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}

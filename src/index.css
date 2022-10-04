@@ -5,9 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(circle at center, #2e0477, #1d1d1b);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@font-face {
+  font-family: OrbitronRegular;
+  src: url(./fonts/Orbitron-Regular.ttf);
+}
+@font-face {
+  font-family: OrbitronMedium;
+  src: url(./fonts/Orbitron-Medium.ttf);
+}
+@font-face {
+  font-family: OrbitronRegular;
+  src: url(./fonts/Orbitron-Regular.ttf);
 }
